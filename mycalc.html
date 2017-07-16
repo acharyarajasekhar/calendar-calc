@@ -1,0 +1,40 @@
+<html>
+
+<body>
+
+    <!--<script src="./julian.js"></script>
+    <script src="./dms.js"></script>
+    <script src="./ayanamsa.js"></script>
+    <script src="./sun-long.js"></script>-->
+    <script src="https://raw.githubusercontent.com/schenna/panchangJS/master/src/panchang.js"></script>
+    <!---->
+
+    <script>
+        var date = new Date();//'2009-07-15'
+
+        // var jd = toJulian(date);
+        // var todays = toDays(date);
+        // print(jd);
+        // print(toDMS(calcAyanamsa(date)));
+        // print(toDMS(calcSunLong(todays)));
+
+        var t = new Date();
+        
+        panchang.calculate(t, function () {
+            // document.getElementById("day").innerHTML = panchang.Day.name;
+            print(panchang.Tithi.name)
+            // document.getElementById("nakshtra").innerHTML = panchang.Nakshatra.name;
+            // document.getElementById("karna").innerHTML = panchang.Karna.name;
+            // document.getElementById("yoga").innerHTML = panchang.Yoga.name;
+            // document.getElementById("raasi").innerHTML = panchang.Raasi.name;
+            // document.getElementById("ayanamsa").innerHTML = panchang.Ayanamsa.name;
+        });
+
+        function print(text) {
+            document.write(text + "<br/>");
+        }
+    </script>
+
+</body>
+
+</html>
