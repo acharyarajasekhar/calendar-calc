@@ -13,6 +13,20 @@
         "Kumbha",
         "Meena"
     ],
+    "zodiacCodes": [
+        "AR",
+        "TA",
+        "GE",
+        "CN",
+        "LE",
+        "VI",
+        "LI",
+        "SC",
+        "SG",
+        "CP",
+        "AQ",
+        "PI"
+    ],
     "weekDay": [
         "Sunday",
         "Monday",
@@ -124,5 +138,9 @@
         "Bramha",
         "Indra",
         "Vaidhruthi"
+    ],
+    "Paksha":[
+        "Sukla",
+        "Krishna"
     ]
 }
